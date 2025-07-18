@@ -1,21 +1,20 @@
 {
-	"name": "ezbio",
+	"name": "snezze.xyzzz",
 	"private": true,
 	"version": "0.0.0",
 	"type": "module",
-	"homepage": "https://sneeze.github.io/snezze.xyzzz/",
+	"homepage": "https://snezze.github.io/snezze.xyzzz/",
 	"scripts": {
 		"dev": "vite",
 		"build": "vite build",
 		"predeploy": "npm run build",
-		"deploy": "gh-pages -d dist",
-		"lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
+		"deploy:gh": "gh-pages -d docs -b gh-pages",
+		"deploy:root": "gh-pages -d docs -b root",
 		"preview": "vite preview"
 	},
 	"dependencies": {
 		"cors": "^2.8.5",
 		"express": "^4.18.2",
-		"gh-pages": "^6.3.0",
 		"react": "^18.2.0",
 		"react-dom": "^18.2.0"
 	},
@@ -27,6 +26,7 @@
 		"eslint-plugin-react": "^7.33.2",
 		"eslint-plugin-react-hooks": "^4.6.0",
 		"eslint-plugin-react-refresh": "^0.4.5",
+		"gh-pages": "^6.3.0",
 		"vite": "^5.0.8"
 	}
 }
